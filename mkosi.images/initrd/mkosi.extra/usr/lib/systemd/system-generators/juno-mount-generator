@@ -4,8 +4,8 @@
 # EROFS /usr image from the @usr btrfs subvolume on the root partition.
 #
 # Layout on the root btrfs partition:
-#   @ (default subvolume)  →  mounted at /sysroot by systemd gpt-auto
-#   @usr (nodatacow)        →  contains usr-${IMAGE_VERSION}.erofs
+#   @    (default subvolume)  →  mounted at /sysroot by systemd gpt-auto
+#   @usr (nodatacow)          →  contains usr-${IMAGE_VERSION}.erofs
 #
 # This generator creates two mount units:
 #   1. sysroot-.usr.mount     — mounts @usr subvolume at /sysroot/.usr
