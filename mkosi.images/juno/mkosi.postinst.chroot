@@ -2,5 +2,5 @@
 
 set -ex
 
-mkdir /@usr
-mkfs.erofs -zlz4hc /@usr/usr-${IMAGE_VERSION}.erofs /usr
+mkdir /@images
+mkfs.erofs -zlz4hc /@images/usr-${IMAGE_VERSION}.erofs /usr
