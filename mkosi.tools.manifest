@@ -32,6 +32,7 @@
         "erofs-utils",
         "file",
         "findutils",
+        "fish",
         "gawk",
         "git-core",
         "grep",

@@ -4,7 +4,7 @@
 # EROFS /usr image from the @usr btrfs subvolume on the root partition.
 #
 # Layout on the root btrfs partition:
-#   @    (default subvolume)  →  mounted at /sysroot by systemd gpt-auto
+#   @    (default subvolume)  →  mounted at /sysroot
 #   @images (nodatacow)        →  contains usr-${IMAGE_VERSION}.erofs
 #
 # This generator creates two mount units:
@@ -57,7 +57,7 @@ Before=initrd-usr-fs.target
 Requires=sysroot.mount
 
 [Mount]
-What=/dev/gpt-auto-root
+What=/dev/mapper/ROOT
 Where=/run/images
 Type=btrfs
 Options=subvol=/@images,ro,nodev,noexec

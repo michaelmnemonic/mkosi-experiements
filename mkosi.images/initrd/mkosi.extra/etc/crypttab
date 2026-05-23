@@ -1,0 +1,1 @@
+ROOT PARTLABEL=ROOT   /usr/share/key-file luks,discard
