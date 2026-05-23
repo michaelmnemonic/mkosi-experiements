@@ -60,7 +60,7 @@ Requires=sysroot.mount
 What=/dev/mapper/ROOT
 Where=/run/images
 Type=btrfs
-Options=subvol=/@images,ro,nodev,noexec
+Options=subvol=/@images,nodev,noexec
 EOF
 
 # --- Mount unit 2: Mount the EROFS image at /sysroot/usr ---
